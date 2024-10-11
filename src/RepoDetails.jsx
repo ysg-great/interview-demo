@@ -21,11 +21,11 @@ function RepoDetails() {
   return (
     <div>
       <h1>{repoDetails.name}</h1>
-      <p><strong>Description:</strong> {repoDetails.description}</p>
-      <p><strong>Owner:</strong> {repoDetails.owner.login}</p>
-      <p><strong>Stars:</strong> {repoDetails.stargazers_count}</p>
-      <p><strong>Forks:</strong> {repoDetails.forks_count}</p>
-      <p><strong>Open Issues:</strong> {repoDetails.open_issues_count}</p>
+      <p><strong>Description:</strong> {repoDetails?.description}</p>
+      <p><strong>Owner:</strong> {repoDetails.owner?.login}</p>
+      <p><strong>Stars:</strong> {repoDetails?.stargazers_count}</p>
+      <p><strong>Forks:</strong> {repoDetails?.forks_count}</p>
+      <p><strong>Open Issues:</strong> {repoDetails?.open_issues_count}</p>
       <a href={repoDetails.html_url} target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
   );

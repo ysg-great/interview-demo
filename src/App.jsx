@@ -1,9 +1,5 @@
 import { useState, useEffect} from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { Radio } from 'antd'
-import useWatch from './hooks/useWatch'
 import { Link } from 'react-router-dom';
 
 function App() {
